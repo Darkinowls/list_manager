@@ -6,6 +6,21 @@ from methods import app, filters, SCROLL_EMOJI
 
 # TODO: validation if it is our group
 
+@app.on_message(filters.command("head", "/", True) & filters.reply)
+def edit_header(client, message):
+    if (message["reply_to_message"]["from_user"]["username"] != "abobus_servitor_bot" or
+            SCROLL_EMOJI not in message["reply_to_message"]["text"]):
+        return
+
+    order_list = message["reply_to_message"]["text"]
+    new_header = SCROLL_EMOJI + ' ' + message["text"][6:] + '\n'
+
+    new_order_list = re.sub("^" + SCROLL_EMOJI + "\s?.{0,100}((\n)|($))", new_header, order_list)
+
+    app.edit_message_text(chat_id=message["chat"]["id"],
+                          message_id=message["reply_to_message"]["message_id"],
+                          text=new_order_list)
+
 
 @app.on_message(filters.command("head", "/", True) & filters.reply)
 def edit_header(client, message):
@@ -56,7 +71,10 @@ def add_to_list(client, message):
     indexes = []
     record_list.append(message["text"])
     for record in record_list[1:]:
-        indexes.append(int(re.search('^\d{1,3}', record).group()))
+        index = int(re.search('^\d{1,3}', record).group())
+        if index in indexes :
+            return
+        indexes.append(index)
         dict_list[indexes[-1]] = record
 
     indexes = sorted(indexes)
