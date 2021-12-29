@@ -14,8 +14,10 @@ def edit_header(client, message):
         return
 
     order_list = message["reply_to_message"]["text"]
-    new_header = message["text"]
-    new_order_list = re.sub('^' + SCROLL_EMOJI + ' .{1,100}' + '\n$', new_header + 's', order_list)
+    new_header = SCROLL_EMOJI + ' ' + message["text"][6:] + '\n'
+
+    new_order_list = re.sub("^" + SCROLL_EMOJI + "\s?.{0,100}((\n)|($))", new_header, order_list)
+
     app.edit_message_text(chat_id=message["chat"]["id"],
                           message_id=message["reply_to_message"]["message_id"],
                           text=new_order_list)
