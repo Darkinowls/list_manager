@@ -1,0 +1,5 @@
+/.env
+/Abobus.session
+/pyvenv.cfg
+/.idea
+/__pycache__

@@ -1,0 +1,135 @@
+{
+  "_": "Message",
+  "message_id": 78,
+  "from_user": {
+    "_": "User",
+    "id": 1647688266,
+    "is_self": false,
+    "is_contact": false,
+    "is_mutual_contact": false,
+    "is_deleted": false,
+    "is_bot": false,
+    "is_verified": false,
+    "is_restricted": false,
+    "is_scam": false,
+    "is_fake": false,
+    "is_support": false,
+    "first_name": "From ТІ-92 import Черноусов Денис as",
+    "last_name": "Denus",
+    "status": "recently",
+    "username": "DarkInOwls",
+    "language_code": "uk",
+    "dc_id": 2,
+    "photo": {
+      "_": "ChatPhoto",
+      "small_file_id": "AQADAgADuLcxGyjQOUkAEAIAA0q6NWIABEIq8SKXMNTgAAQeBA",
+      "small_photo_unique_id": "AgADuLcxGyjQOUk",
+      "big_file_id": "AQADAgADuLcxGyjQOUkAEAMAA0q6NWIABEIq8SKXMNTgAAQeBA",
+      "big_photo_unique_id": "AgADuLcxGyjQOUk"
+    }
+  },
+  "date": "2021-12-26 12:20:36",
+  "chat": {
+    "_": "Chat",
+    "id": 1647688266,
+    "type": "private",
+    "is_verified": false,
+    "is_restricted": false,
+    "is_scam": false,
+    "is_fake": false,
+    "is_support": false,
+    "username": "DarkInOwls",
+    "first_name": "From ТІ-92 import Черноусов Денис as",
+    "last_name": "Denus",
+    "photo": {
+      "_": "ChatPhoto",
+      "small_file_id": "AQADAgADuLcxGyjQOUkAEAIAA0q6NWIABEIq8SKXMNTgAAQeBA",
+      "small_photo_unique_id": "AgADuLcxGyjQOUk",
+      "big_file_id": "AQADAgADuLcxGyjQOUkAEAMAA0q6NWIABEIq8SKXMNTgAAQeBA",
+      "big_photo_unique_id": "AgADuLcxGyjQOUk"
+    },
+    "dc_id": 2
+  },
+  "reply_to_message": {
+    "_": "Message",
+    "message_id": 74,
+    "from_user": {
+      "_": "User",
+      "id": 1647688266,
+      "is_self": false,
+      "is_contact": false,
+      "is_mutual_contact": false,
+      "is_deleted": false,
+      "is_bot": false,
+      "is_verified": false,
+      "is_restricted": false,
+      "is_scam": false,
+      "is_fake": false,
+      "is_support": false,
+      "first_name": "From ТІ-92 import Черноусов Денис as",
+      "last_name": "Denus",
+      "status": "recently",
+      "username": "DarkInOwls",
+      "language_code": "uk",
+      "dc_id": 2,
+      "photo": {
+        "_": "ChatPhoto",
+        "small_file_id": "AQADAgADuLcxGyjQOUkAEAIAA0q6NWIABEIq8SKXMNTgAAQeBA",
+        "small_photo_unique_id": "AgADuLcxGyjQOUk",
+        "big_file_id": "AQADAgADuLcxGyjQOUkAEAMAA0q6NWIABEIq8SKXMNTgAAQeBA",
+        "big_photo_unique_id": "AgADuLcxGyjQOUk"
+      }
+    },
+    "date": "2021-12-26 12:09:46",
+    "chat": {
+      "_": "Chat",
+      "id": 1647688266,
+      "type": "private",
+      "is_verified": false,
+      "is_restricted": false,
+      "is_scam": false,
+      "is_fake": false,
+      "is_support": false,
+      "username": "DarkInOwls",
+      "first_name": "From ТІ-92 import Черноусов Денис as",
+      "last_name": "Denus",
+      "photo": {
+        "_": "ChatPhoto",
+        "small_file_id": "AQADAgADuLcxGyjQOUkAEAIAA0q6NWIABEIq8SKXMNTgAAQeBA",
+        "small_photo_unique_id": "AgADuLcxGyjQOUk",
+        "big_file_id": "AQADAgADuLcxGyjQOUkAEAMAA0q6NWIABEIq8SKXMNTgAAQeBA",
+        "big_photo_unique_id": "AgADuLcxGyjQOUk"
+      },
+      "dc_id": 2
+    },
+    "mentioned": false,
+    "scheduled": false,
+    "from_scheduled": false,
+    "text": "/json",
+    "entities": [
+      {
+        "_": "MessageEntity",
+        "type": "bot_command",
+        "offset": 0,
+        "length": 5
+      }
+    ],
+    "outgoing": false
+  },
+  "mentioned": false,
+  "scheduled": false,
+  "from_scheduled": false,
+  "text": "/json",
+  "entities": [
+    {
+      "_": "MessageEntity",
+      "type": "bot_command",
+      "offset": 0,
+      "length": 5
+    }
+  ],
+  "outgoing": false,
+  "command": [
+    "json"
+  ]
+}
